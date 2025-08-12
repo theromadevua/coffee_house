@@ -1,0 +1,154 @@
+.authFormContainer {
+    max-width: 400px;
+    width: 100%;
+    padding: 2rem;
+    background: var(--neutral-200);
+    border-radius: 8px;
+    box-shadow: 0 4px 9px rgba(60, 47, 34, 0.1);
+  }
+  
+  .authForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .formLabel {
+    color: var(--primary-800);
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+  
+  .formInput {
+    padding: 0.75rem;
+    border-radius: 4px;
+    background: var(--neutral-50);
+    color: var(--primary-800);
+    font-size: 1rem;
+    transition: all 0.2s ease;
+  }
+  
+  .formInput:focus {
+    outline: none;
+  }
+  
+  .errorMessage {
+    color: #A0522D;
+    font-size: 0.875rem;
+    text-align: center;
+  }
+  
+  .submitButton {
+    padding: 0.75rem;
+    background: var(--primary-800);
+    color: var(--neutral-50);
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+  
+  .submitButton:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .toggleContainer {
+    text-align: center;
+  }
+  
+  .toggleButton {
+    background: none;
+    border: none;
+    color: var(--primary-700);
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  .toggleButton:hover {
+    color: var(--neutral-300);
+    text-decoration: underline;
+  }
+
+  .homeLink{
+    position: fixed;
+    top: 15px;
+    left: 15px;
+  }
+
+  .homeLink:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+
+  .line{
+    margin-top: 10px;
+    height: 1px;
+    border: none;
+    width: 100%;
+    background-color: var(--primary-700);
+  }
+
+.authPage{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.authPageContainer{
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+}
+
+.authPageTitle{
+    margin-bottom: 10px;
+    color: var(--primary-700);
+    font-size: 26px;
+}
+
+.errorMessage {
+    color: var(--rose);
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid var(--rose);
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+
+  
+  .googleButtonContainer {
+    margin-top: 16px;
+    text-align: center;
+  }
+  
+  .googleButton {
+    background-color: var(--neutral-50);
+    color: white;
+    padding: 12px 16px;
+    border-radius: 6px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .googleButton:hover {
+    background-color: var(--primary-800);
+  }

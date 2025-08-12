@@ -1,0 +1,157 @@
+.container {
+    color: var(--primary-700);
+    padding: 24px;
+    border-radius: 0.5rem;
+  }
+  
+  .loading, .error, .empty {
+    color: var(--primary-700);
+    font-size: 1.2rem;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .error {
+    color: var(--accent);
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--neutral-300);
+    padding-bottom: 1rem;
+  }
+  
+  .header h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-700);
+    margin: 0;
+  }
+  
+  .detailsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .detailItem {
+    background-color: var(--neutral-100);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+  
+  .detailLabel {
+    font-size: 0.8rem;
+    color: var(--primary-500);
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  
+  .totalAmount {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--accent);
+  }
+  
+  .itemsHeader {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--neutral-300);
+  }
+  
+  .itemList {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .item {
+    background-color: var(--neutral-100);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .itemDetails {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .itemName {
+    font-weight: 600;
+    font-size: 1.1rem;
+  }
+  
+  .itemQuantity {
+    font-size: 0.9rem;
+    color: var(--primary-500);
+  }
+  
+  .itemPrice {
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-align: right;
+  }
+  
+  .itemPricePerUnit {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--primary-500);
+  }
+  
+  .orderStatus {
+    padding: 0.25rem 0.75rem;
+    border-radius: 7px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    text-transform: capitalize;
+  }
+  .status_pending { background-color: #fde68a; color: #ca8a04; }
+  .status_processing { background-color: #bae6fd; color: #0284c7; }
+  .status_shipped { background-color: #c7d2fe; color: #4f46e5; }
+  .status_delivered { background-color: #bbf7d0; color: #16a34a; }
+  .status_cancelled { background-color: #fecaca; color: #dc2626; }
+
+  .buttonsContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2.5rem;
+  }
+
+  .backLink {
+    display: inline-block;
+    color: var(--primary-700);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+
+  .downloadLink{
+    color: var(--primary-700);
+    font-weight: 600;
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+
+  .backLink:hover {
+    color: var(--accent);
+  }
+
+  .downloadLink:hover {
+    color: var(--neutral-300);
+  }

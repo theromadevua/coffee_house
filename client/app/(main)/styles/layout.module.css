@@ -1,0 +1,28 @@
+.layoutContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .layoutContent {
+    background-color: var(--background);
+  }
+
+ .layoutContentContainer{
+    height: calc(100vh - 72px);
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+ }
+  
+  
+  @media screen and (max-width: 768px) {
+    .layoutContent {
+      height: auto; 
+    }
+
+    .layoutContentContainer{
+      height: calc(100vh);
+    }
+  }
+  

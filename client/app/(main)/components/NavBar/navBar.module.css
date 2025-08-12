@@ -1,0 +1,162 @@
+.navbar {
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--primary-800);
+  color: var(--foreground);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5rem;
+  height: 72px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+
+.navbarHeader {
+  display: flex;
+  align-items: center;
+}
+
+.navBarTitle{
+  font-size: 18px;
+  color: var(--neutral-100);
+  font-weight: 600;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  cursor: pointer;
+}
+
+.logoIcon {
+  color: var(--neutral-100);
+}
+
+.navbarNav {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.navLink {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--neutral-100);
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 10px 12px;
+  border-radius: 8px;
+  transition: all 0.25s ease;
+  position: relative;
+}
+
+.loginLink{
+  background-color: var(--neutral-100);
+  color: var(--primary-800);
+}
+
+.navLink:hover {
+  background-color: var(--accent);
+  color: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.navLink .navIcon {
+  color: inherit;
+  transition: color 0.2s ease;
+}
+
+.iconContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.cartActive {
+  position: absolute;
+  top: -4px;
+  right: -6px;
+  width: 9px;
+  height: 9px;
+  background-color: var(--error);
+  border-radius: 50%;
+  border: 1px solid var(--primary-800);
+}
+
+.mobileMenuButton {
+  display: none;
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  background-color: var(--accent);
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  z-index: 1100;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.mobileMenuButton:hover {
+  background-color: var(--accent-dark);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.45);
+  z-index: 999;
+  display: none;
+}
+
+.overlay.open {
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .mobileMenuButton {
+    display: block;
+  }
+
+  .navbar {
+    position: fixed;
+    display: block;
+    width: 250px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    padding: 82px 0 0 0;
+  }
+
+  .navbar.open {
+    transform: translateX(0);
+  }
+
+  .navbarNav {
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .navLink {
+    width: 100%;
+    padding: 14px 18px;
+    font-size: 1.05rem;
+  }
+
+  .logo {
+    padding-left: 20px;
+  }
+}

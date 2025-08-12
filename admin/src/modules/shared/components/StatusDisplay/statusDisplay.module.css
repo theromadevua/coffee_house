@@ -1,0 +1,15 @@
+.loading, .error {
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 1.25rem;
+    color: var(--neutral-900);
+    
+  }
+  
+  .error {
+    max-width: 560px;
+    color: var(--accent-500);
+    background-color: var(--accent-100);
+    border: 1px solid var(--accent-200);
+    border-radius: 0.5rem;
+  }

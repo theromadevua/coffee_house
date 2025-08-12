@@ -1,0 +1,36 @@
+.profileForm {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .formInput {
+    padding: 12px;
+    border: 1px solid var(--neutral-200);
+    border-radius: 10px;
+    font-size: 16px;
+    color: var(--foreground);
+  }
+
+  .submitButton {
+    margin-left: auto;
+    margin-top: 10px;
+    padding: 12px 32px;
+    width: max-content;
+    background: var(--primary-700);
+    border-radius: 12px;
+    color: var(--neutral-50);
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .submitButton:hover {
+    background: var(--primary-800);
+  }

@@ -1,0 +1,63 @@
+.adminLayout {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.adminHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.adminHeader button{
+  border: none;
+  cursor: pointer;
+}
+
+.buttonRed{
+  background-color: rgb(255, 71, 71) !important;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+button:hover{
+  background-color: var(--primary-color);
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+.adminContent {
+  flex-grow: 1;
+  padding: 2rem;
+}
+
+.content{
+  overflow-y: auto;
+  height: 100vh;
+  flex: 1;
+  background-color: var(--neutral-100);
+
+}

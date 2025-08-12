@@ -1,0 +1,47 @@
+.formGroup {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.formLabel {
+  display: block;
+  font-weight: 600;
+  color: var(--primary-800);
+  font-size: 0.875rem;
+}
+
+.inputWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.formInput {
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: var(--neutral-50);
+  color: var(--primary-800);
+  transition: all 0.2s ease;
+}
+
+.formInput:focus {
+  outline: none;
+}
+
+.eyeButton {
+  position: absolute;
+  right: 15px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}

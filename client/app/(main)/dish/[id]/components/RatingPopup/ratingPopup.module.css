@@ -1,0 +1,87 @@
+.overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .popup {
+    background-color: #fff;
+    padding: 24px;
+    border-radius: 12px;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+  
+  .stars {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+  
+  .star {
+    font-size: 32px;
+    color: #d1d5db; /* gray */
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .star:hover {
+    transform: scale(1.1);
+  }
+  
+  .active {
+    color: #facc15; /* yellow */
+  }
+  
+  .actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+  }
+  
+  .cancel {
+    padding: 8px 16px;
+    background-color: #e5e7eb;
+    border: none;
+    border-radius: 6px;
+    color: #111827;
+    cursor: pointer;
+  }
+  
+  .cancel:hover {
+    background-color: #d1d5db;
+  }
+  
+  .submit {
+    padding: 8px 16px;
+    background-color: var(--primary-700);
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .submit:hover {
+    background-color: var(--primary-800);
+  }
+  
+  .disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  

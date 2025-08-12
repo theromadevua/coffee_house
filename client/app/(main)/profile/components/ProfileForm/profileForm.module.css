@@ -1,0 +1,27 @@
+.profileContainer {
+  width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .profileContainer {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+}
+
+.profileWrapper {
+  background: var(--neutral-50);
+  border-radius: 20px;
+  padding: 32px;
+  box-shadow: 0 8px 32px rgba(91, 64, 51, 0.1);
+}
+
+.profileUpdate {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: var(--foreground);
+}

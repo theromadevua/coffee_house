@@ -1,0 +1,49 @@
+.profileData {
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+    gap: 24px;
+  }
+
+  .profileDataText {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .profileDataButton {
+    padding: 8px 16px;
+    background: var(--error);
+    color: var(--neutral-50);
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .profileDataButton:hover{
+    transform: translateY(-5px);
+  }
+  .profileMainData {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .profileTitle{
+    word-break: break-all; 
+  }
+
+  .profileSubtitle{
+    word-break: break-all; 
+  }
+
+  @media  screen and (max-width: 768px) { 
+    .profileDataText{
+      flex-direction: column;
+      align-items: start;
+      gap: 20px;
+    }
+  }
+

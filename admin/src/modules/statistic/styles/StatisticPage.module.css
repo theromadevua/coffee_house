@@ -1,0 +1,139 @@
+.container {
+    background-color: var(--neutral-100);
+    color: var(--neutral-900);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    min-height: 100vh;
+  }
+  
+  .pageTitle {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--neutral-900);
+    margin-bottom: 2rem;
+  }
+  
+  .statBox {
+    background-color: var(--white);
+    border: 1px solid var(--neutral-300);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  }
+  
+  .statBoxTitle {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--neutral-500);
+    margin: 0 0 0.5rem 0;
+  }
+  
+  .statBoxValue {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--neutral-700);
+    line-height: 1;
+  }
+  
+  .tableSection {
+    background-color: var(--white);
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--neutral-300);
+    margin-bottom: 2.5rem;
+    overflow: hidden;
+  }
+  
+  .sectionTitle {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--neutral-700);
+    margin: 0;
+    padding: 1.5rem;
+    border-bottom: 1px solid var(--neutral-300);
+  }
+  
+  .tableWrapper {
+    overflow-x: auto;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    white-space: nowrap;
+  }
+  
+  .table th,
+  .table td {
+    padding: 0.875rem 1.5rem;
+    text-align: left;
+    border-bottom: 1px solid var(--neutral-300);
+  }
+  
+  .table th {
+    background-color: var(--neutral-100);
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--neutral-500);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  
+  .table td {
+    color: var(--neutral-700);
+    font-size: 0.875rem;
+  }
+  
+  .table tbody tr:last-child td {
+    border-bottom: none;
+  }
+  
+  .table tbody tr:hover {
+    background-color: var(--neutral-200);
+  }
+  
+  .textRight {
+    text-align: right;
+    font-feature-settings: "tnum";
+  }
+  
+  .stateContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--neutral-100);
+  }
+  
+  .loadingSpinner {
+    width: 3rem;
+    height: 3rem;
+    border: 4px solid rgba(37, 99, 235, 0.2);
+    border-top-color: var(--primary-600);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+  
+  .errorMessage {
+    color: var(--accent-500);
+    font-size: 1.25rem;
+    font-weight: 500;
+    background-color: var(--accent-100);
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--accent-200);
+  }
+  
+  .noDataMessage {
+    color: var(--neutral-600);
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+  

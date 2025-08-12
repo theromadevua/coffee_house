@@ -1,0 +1,43 @@
+.searchInput {
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--neutral-300);
+    width: 300px;
+    font-size: 1rem;
+    color: var(--neutral-700);
+    background-color: var(--white);
+  }
+  
+  .searchInput:focus {
+    outline: 1px solid var(--neutral-300);
+  }
+  
+  .searchBlock {
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+  }
+
+
+
+  .button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: var(--white);
+    transition: background-color 0.2s ease;
+    font-weight: 600;
+  }
+    
+  .primaryButton {
+    padding: 0.75rem 1rem;
+    background-color: var(--primary-500);
+  }
+  
+  .primaryButton:hover {
+    background-color: var(--primary-600);
+  }
+  

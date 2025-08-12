@@ -1,0 +1,82 @@
+.categoriesSection {
+  padding: 0rem 0px;
+  width: max-content;
+  width: 50%;
+  flex: 1;
+  margin-right: 100px;
+  height: 52px;
+}
+
+@media screen and (max-width: 600px) {
+  .categoriesSection{
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+.categoriesSection h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-700);
+  margin-bottom: 5px;
+}
+
+.categoryList {
+  display: flex;
+  gap: 1rem;
+  padding: 2px;
+  padding-bottom: 10px;
+  scroll-behavior: smooth;
+  flex: 1;
+  max-width: 700px;
+  overflow-y: scroll;
+  transform: rotateX(180deg);;
+
+}
+
+.categoryCard {
+  transform: rotateX(180deg);
+  flex-shrink: 0;
+  border-radius: 20px;
+  padding: 7px 12px;
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+  background-color: var(--neutral-50);
+  border: 1px solid rgba(139, 111, 90, 0.2);
+  cursor: pointer;
+}
+
+.categoryCard h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--primary-700);
+  margin: 0;
+}
+
+.categoryCard:hover {
+  background-color: var(--neutral-100);
+}
+
+.categoryCard.active {
+  outline: 1px solid var(--primary-800);
+  background-color: var(--neutral-100);
+}
+
+.statusMessage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.loading {
+  color: var(--neutral-300);
+}
+
+.error {
+  color: var(--error-color);
+}
+
+.empty {
+  color: var(--neutral-300);
+}
