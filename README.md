@@ -4,7 +4,7 @@ Welcome to **Coffee House** - online platform for ordering your favorite coffee 
 
 ## Screenshots
 <img src="coffee-house-screen.jpg" alt="Welcome Screen" width="500" />
-<img src="admin-side-screen" alt="Admin Side Screen" width="500" />
+<img src="admin-side-screen.jpg" alt="Admin Side Screen" width="500" />
 
 ## Features
 - Browse a wide variety of coffee and snack options.
